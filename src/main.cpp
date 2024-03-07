@@ -256,39 +256,7 @@ void showLayer(bool p0) {
 			if (WinLayer->getChildByID("end-text")) { 	
 				WinLayer->getChildByID("end-text")->setPosition(73,95);
 				WinLayer->getChildByID("end-text")->setScale(0.425);
-				randomnum = rand() % 1000 + 1;
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->limitLabelWidth(35,0.425,0.1);
-				if (randomnum == 1) {
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->setString("F in Chat");
-				}
-				if (randomnum == 2) {
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->setString("Take a Break");
-				}
-				if (randomnum == 3) {
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->setString(":0");
-				}
-				if (randomnum == 4) {
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->setString("oh my dayz");
-				}
-				if (randomnum == 5) {
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->setString("YAAAA");
-				}
-				if (randomnum == 6) {
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->setString("abcdefghijklmnop");
-				}
-				if (randomnum == 7) {
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->setString("123456789");
-				}
-				if (randomnum == 8) {
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->setString("W");
-				}
-				if (randomnum == 9) {
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->setString("¿Cuándo sales alguna vez afuera?");
-				}
-				if (randomnum == 10) {
-				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->setString("Megahack Update When?");
-				}
-				
+				static_cast<cocos2d::CCLabelBMFont*>(WinLayer->getChildByID("end-text"))->limitLabelWidth(420.f, 10.f, .25f);;
 			}
 		
 		if (CoinCount > 0) {
