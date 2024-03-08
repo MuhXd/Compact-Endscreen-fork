@@ -13,7 +13,7 @@ int t = 0;
 /*
 Geode as of writing this is adding node ids to the end level layer but 1, i did this before and just renaming the layers so when it comes out it doesn't break
 */
-// This just Makes it so you can get the texture by Sprite and stuff 
+// This just Makes it so you can get the texture by Sprite and stuff  
 bool isSpriteFrameName_1(CCNode* node, const char* name) {
     auto cache = CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(name);
     if (!cache) return false;
